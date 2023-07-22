@@ -12,7 +12,11 @@ app.get("/", (req, res) => {
 app.post("/register", async (req, res) => {
     try {
         // get all data from body
+        const {firstname, lastname, email, password} = req.body
         // all the data should exist
+        if(!(firstname && lastname && email && password)) {
+            res.status(400).send('All fields are compulsory')
+        }
         // check if user already exists
         // encrypt the password
         // save the user in DB
