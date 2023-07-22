@@ -22,7 +22,8 @@
 		"vscode": {
 			"extensions": [
 				"esbenp.prettier-vscode",
-				"rangav.vscode-thunder-client"
+				"rangav.vscode-thunder-client",
+				"vscode-icons-team.vscode-icons"
 			],
 			"settings": {
 				"editor.fontSize": 22,
